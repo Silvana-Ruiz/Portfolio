@@ -1,0 +1,20 @@
+﻿#photo {
+    width: 200px;
+    margin: 2rem 0;
+    border-radius: 80%;
+}
+
+.welcome-section{
+    margin: 5rem 0 10rem 0;
+    color: white;
+}
+
+.welcome-section h1 {
+    margin-bottom: 1rem;
+}
+
+.welcome-section p {
+    font-family: sans-serif;
+    line-height: 1.5;
+    font-size: 1.25rem;
+}
