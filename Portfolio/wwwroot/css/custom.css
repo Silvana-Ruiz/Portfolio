@@ -1,4 +1,6 @@
-﻿#photo {
+﻿/*WELCOME SECTION*/ 
+
+#photo {
     width: 200px;
     margin: 2rem 0;
     border-radius: 80%;
@@ -17,4 +19,23 @@
     font-family: sans-serif;
     line-height: 1.5;
     font-size: 1.25rem;
+}
+
+#img-dotnet {
+    width: 500px;
+}
+
+/*SKILLS*/
+.skills ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.skills-header {
+    font-weight: bold;
+}
+
+.skills i {
+    color: #0d6efd;
+    font-size: 50px;
 }
