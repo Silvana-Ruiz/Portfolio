@@ -1,0 +1,34 @@
+﻿<!--Partial View for Projects-->
+@model IEnumerable<ProjectDTO>
+
+@if (Model is not null)
+{
+    <div class="text-center" style="padding-top: 6rem">
+        <h1>Sample Projects</h1>
+        <p>Here you can see some sample projects.</p>
+    </div>
+    <div class="container">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                @foreach(var project in Model)
+                {
+                   <div class="col">
+                       <div class="card h-100">
+                           <img src="@project.ImageURL" class="card-img-top" alt="project image"/>
+                           <div class="card-body">
+                                <h5 class="card-title">@project.Title</h5>
+                                <p class="card-text">@project.Description</p>
+                           </div>
+                         <div class="card-footer">
+                            <a class="btn btn-primary" href="@project.Link" target="_blank"
+                            rel="noopener noreferrer"> Visit</a>
+                         </div>
+
+                       </div>
+                   </div>
+
+                }
+            </div>
+        </div>
+    </div>
+}
