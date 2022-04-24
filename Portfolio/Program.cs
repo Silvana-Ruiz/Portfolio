@@ -5,11 +5,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddTransient<IProjectsRepo, ProjectsRepo>();// To have an initialized instance automatically in the constructor of a class
-/*
-builder.Services.AddTransient<ServicioTransitorio>();
-builder.Services.AddScoped<ServicioDelimitado>();
-builder.Services.AddSingleton<ServicioUnico>();
-*/
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
